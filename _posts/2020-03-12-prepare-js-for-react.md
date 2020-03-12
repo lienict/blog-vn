@@ -18,20 +18,28 @@ Let's go!
 
 ## Template Literals
 
-Template literals are like regular strings with super-powers:
+Template literals là tên gọi của tính năng dành cho thao tác với string,được thêm vào trong phiên bản ES6. Với tính năng này, chúng ta có thể khai báo hoặc sử dụng multi-line string dễ dàng, bên cạnh đó có thể sử dụng biến, biểu thức, và thực hiện hàm bên trong 1 string và không cần phải thông qua phép cộng string cổ điển (khá tiện lợi đó nha!).
 
 {% highlight js %}
 const greeting = 'Hello'
 const subject = 'World'
-console.log(`${greeting} ${subject}!`) // Hello World!
-
-// this is the same as:
+console.log(`${greeting} ${subject}!`) // Nó sẽ trả ra là Hello World
+// Kết quả trả ra giống với cách viết cộng string này
 console.log(greeting + ' ' + subject + '!')
 
-// in React:
+// Trong React, ta có thể dùng nó để thêm class mà được định nghĩa từ trước như sau:
 function Box({className, ...props}) {
   return <div className={`box ${className}`} {...props} />
 }
+
+// sử dụng để khai báo multi-line
+const multi = `dong 1
+dong 2
+dong 3
+`;
+
+// thực hiện biểu thức trong string
+console.log(`aaa ${true ? "true ne" : "false ne"}`) // nó sẽ in ra là 'aaa true ne'
 {% endhighlight %}
 
 [MDN: Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
