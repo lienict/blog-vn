@@ -8,17 +8,13 @@ fig-caption: # Add figcaption (optional)
 tags: [ReactJS, Javascript]
 ---
 
-One of the things I love most about React compared to other frameworks that I've
-used is how exposed you are to JavaScript when you're using it. There's no
-template DSL (JSX compiles to sensible JavaScript), the component API has only
-gotten simpler with the addition of [React Hooks](https://reactjs.org/hooks),
-and the framework offers you very little abstraction outside the core UI
-concerns it's intended to solve.
-
-Because of this, learning JavaScript features is really advisable for you to be
-effective building applications with React. So here are a few JavaScript
-features I'd recommend you spend some time learning so you can be as effective
-as possible working with React.
+Không cần phải dài dòng nữa, ReactJS ngày nay gần như đã là thư viện phổ biến và mạnh mẽ nhất dành cho frontend rồi.
+Từ ngày React Hooks ra đời, cách code React đã trở nên đơn giản, dễ code hơn bao giờ hết. 
+Thành thạo những features của JavaScript để áp dụng vào việc build một ứng dụng bằng React đã trở thành một việc 
+vô cùng tất yếu rồi. Bài viết này sẽ liệt kê ra vài features JavaScript mà tôi khuyến khích các bạn dành thời gian
+để thành thạo nó, từ đó làm cho việc xây dựng ứng dụng React (chắc chắn là hơn thế nữa) của các bạn trở nên 
+hiệu quả hơn bao giờ hết.
+Let's go! 
 
 ## Template Literals
 
