@@ -9,7 +9,7 @@ tags: [ReactJS, Javascript]
 ---
 
 Không cần phải dài dòng nữa, ReactJS ngày nay gần như đã là thư viện phổ biến và mạnh mẽ nhất dành cho frontend rồi.
-Từ ngày React Hooks ra đời, cách code React đã trở nên đơn giản, dễ code hơn bao giờ hết. 
+Từ ngày [React Hooks](https://reactjs.org/hooks) ra đời, cách code React đã trở nên đơn giản, dễ code hơn bao giờ hết. 
 Thành thạo những features của JavaScript để áp dụng vào việc build một ứng dụng bằng React đã trở thành một việc 
 vô cùng tất yếu rồi. Bài viết này sẽ liệt kê ra vài features JavaScript mà tôi khuyến khích các bạn dành thời gian
 để thành thạo nó, từ đó làm cho việc xây dựng ứng dụng React (chắc chắn là hơn thế nữa) của các bạn trở nên 
