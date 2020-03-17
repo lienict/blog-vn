@@ -294,9 +294,6 @@ import React, {Suspense, Fragment} from 'react'
 
 [MDN: export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
-> As another resource, I gave a whole talk about this syntax and you can
-> [watch that talk here](https://www.youtube.com/watch?v=kTlcu16rSLc&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf)
-
 ## Ternaries
 
 Trong React, để làm với render có điều kiện, bạn có thể sử dụng nhiều cách như dùng if/else, switch hoặc là toán tử &&..
@@ -340,8 +337,7 @@ function TeddyBearList({teddyBears}) {
 
 ## Array Methods
 
-Arrays are fantastic and I use array methods all the time! I probably use the
-following methods the most frequently:
+Javascript cung cấp rất nhiều phương thức để làm việc với array, dưới đây là những tính năng mà tôi dùng nhiều nhất
 
 - find
 - some
@@ -351,7 +347,7 @@ following methods the most frequently:
 - filter
 - reduce
 
-Here are some examples:
+Dưới đây là vài ví dụ
 
 {% highlight js %}
 const dogs = [
