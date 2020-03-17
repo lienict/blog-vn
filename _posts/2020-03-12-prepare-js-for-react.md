@@ -427,9 +427,8 @@ function RepositoryList({repositories, owner}) {
 
 ## Promises và async/await
 
-Ừm, có thể cần phải có một bài viết riêng dành cho Promise và async/await. Đại khái thì thế này, Promise thì là một chủ đề khá lớn và nó làm các lập trình viên tốn chút thời gian để thực hành và làm việc một cách trơn tru với nó. Bây giờ, trong hệ sinh thái của Javascript thì Promises đã có mặt ở khắp các ngõ ngách rồi.
-Promise giúp bạn quản lý code bất đồng bộ và được trả về từ nhiều DOM APIs cũng như là phía thư viện thứ ba (third pary library).
-Promise xuất hiện góp phần rất lớn làm loại bỏ được callback hell. Nhưng khi dùng Promise không khéo léo, lại dễ dẫn đến Promise hell.
+Ừm, có thể cần phải có một bài viết riêng dành cho Promise và async/await. Đại khái thì thế này, nói về Promise thì là một chủ đề khá lớn và rất hay, nó làm các lập trình viên tốn chút thời gian để thực hành và làm việc một cách trơn tru với nó. Bây giờ, trong hệ sinh thái của Javascript thì Promise đã có mặt ở khắp các ngõ ngách rồi, kể cả có là client hay server đi nữa đều có sự hiện diện của Promise.
+Promise giúp bạn quản lý code bất đồng bộ trong Javascript tốt hơn, làm code của bạn trở nên trong sáng dễ đọc, và hanlding lỗi tốt hơn. Sự xuất hiện của Promise góp phần rất lớn làm loại bỏ được [callback hell](http://callbackhell.com/). Nhưng khi dùng Promise không khéo léo, lại dễ dẫn đến [Promise hell](https://blog.bitsrc.io/how-i-escaped-promise-hell-83f5a36de249).
 Từ đó Async/await ra đời như một cơ chế giúp bạn thao tác code bất đồng bộ một cách tuần tự và trong sáng hơn. 
 Giờ thì mình cũng toàn dùng Async/await, ít khi dùng Promise. Mình hay dùng Promise khi muốn bọc Promise vào một hàm, để có thể sử dụng Async/await với hàm đó.
 
