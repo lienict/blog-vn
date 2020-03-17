@@ -83,14 +83,14 @@ function Counter({initialCount, step}) {
 
 ## Arrow functions
 
-Arrow functions cũng được gọi là "fat arrow" function - là một tính năng giúp chúng ta có thể khai báo function ngắn
+Arrow functions cũng được gọi là "fat arrow" function - là một tính năng giúp chúng ta có thể khai báo function ngắn gọn hơn bằng cách sử dụng mũi tên `=>`. Cú pháp của nó giống với biểu thức Lambdas trong C# hoặc Python. Bằng cách sử dụng arrow functions, chúng ta tránh được việc phải viết `function` keyword và `return` keyword khi khai báo hàm (chúng đã được implicit), và thâm chí không cần dấu ngoặc nhọn.
 
 {% highlight js %}
 const getFive = () => 5
 const addFive = a => a + 5
 const divide = (a, b) => a / b
 
-// this is the same as:
+// tương tự như cách viết này:
 function getFive() {
   return 5
 }
@@ -101,7 +101,7 @@ function divide(a, b) {
   return a / b
 }
 
-// in React:
+// TRong React:
 function TeddyBearList({teddyBears}) {
   return (
     <ul>
@@ -115,18 +115,11 @@ function TeddyBearList({teddyBears}) {
 }
 {% endhighlight %}
 
-> One thing to note about the example above is the opening and closing
-> parentheses `(`. This is a common way to leverage the arrow function's
-> implicit return capabilities when working with JSX.
-
 [MDN: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ## Destructuring
 
-Destructuring is probably my favorite JavaScript feature. I destructure objects
-and arrays all the time (and if you're using `useState` you probably are too,
-[like so](/blog/react-hooks-array-destructuring-fundamentals)). I love how
-declarative it is.
+Destructuring là tính năng mà tôi thích nhất của Javascript. Tôi dùng chúng với object và array mọi lúc mọi nơi.
 
 {% highlight js %}
 // const obj = {x: 3.6, y: 7.8}
