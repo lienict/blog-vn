@@ -204,7 +204,7 @@ Toán tử `...` là một tính năng cực kỳ cool xì lầu của ES6. Chú
 {% highlight js %}
 const arr = [5, 6, 8, 4, 9]
 Math.max(...arr)
-// is the same as
+//Tương tự với
 Math.max.apply(null, arr)
 
 const obj1 = {
@@ -225,20 +225,20 @@ const obj2 = {
   },
 }
 console.log({...obj1, ...obj2})
-// is the same as
+// Tương tự với
 console.log(Object.assign({}, obj1, obj2))
 
 function add(first, ...rest) {
   return rest.reduce((sum, next) => sum + next, first)
 }
-// is the same as
+// cũng tương tự với
 function add() {
   const first = arguments[0]
   const rest = Array.from(arguments).slice(1)
   return rest.reduce((sum, next) => sum + next, first)
 }
 
-// in React:
+// Trong React:
 function Box({className, ...restOfTheProps}) {
   const defaultProps = {
     className: `box ${className}`,
@@ -254,10 +254,8 @@ function Box({className, ...restOfTheProps}) {
 
 ## ESModules
 
-If you're building an app with modern tools, chances are it supports modules,
-it's a good idea to learn how the syntax works because any application of even
-trivial size will likely need to make use of modules for code reuse and
-organization.
+ESModules hay còn gọi là JS modules, nó là một tính năng quan trọng mới của Javascript, trước đây phải chúng sử dụng CommonJS trong NodeJS hay AMD để có thể sử dụng tính năng này. Giờ thì ES6 cho phép chúng ta export và import các object, nhờ thế chúng ta có thể chia nhỏ chương trình ra thành các modules, mỗi modules có thể là một chức năng đặc biệt. 
+Trong một module, bạn có thể sử dụng từ khóa `export` để export bất kỳ kiểu dữ liệu nào như biến, class, function. Đồng thời cũng sử dụng từ khóa import để import module từ file khác.
 
 {% highlight js %}
 export default function add(a, b) {
