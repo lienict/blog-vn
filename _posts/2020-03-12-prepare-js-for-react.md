@@ -425,16 +425,13 @@ function RepositoryList({repositories, owner}) {
 
 [MDN: Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-## Promises and async/await
+## Promises và async/await
 
-This one's a big subject and it can take a bit of practice and time working with
-them to get good at them. Promises are everywhere in the JavaScript ecosystem
-and thanks to how entrenched React is in that ecosystem, they're everywhere
-there as well (in fact, React itself uses promises internally).
-
-Promises help you manage asynchronous code and are returned from many DOM APIs
-as well as third party libraries. Async/await syntax is a special syntax for
-dealing with promises. The two go hand-in-hand.
+Ừm, có thể cần phải có một bài viết riêng dành cho Promise và async/await. Đại khái thì thế này, Promise thì là một chủ đề khá lớn và nó làm các lập trình viên tốn chút thời gian để thực hành và làm việc một cách trơn tru với nó. Bây giờ, trong hệ sinh thái của Javascript thì Promises đã có mặt ở khắp các ngõ ngách rồi.
+Promise giúp bạn quản lý code bất đồng bộ và được trả về từ nhiều DOM APIs cũng như là phía thư viện thứ ba (third pary library).
+Promise xuất hiện góp phần rất lớn làm loại bỏ được callback hell. Nhưng khi dùng Promise không khéo léo, lại dễ dẫn đến Promise hell.
+Từ đó Async/await ra đời như một cơ chế giúp bạn thao tác code bất đồng bộ một cách tuần tự và trong sáng hơn. 
+Giờ thì mình cũng toàn dùng Async/await, ít khi dùng Promise. Mình hay dùng Promise khi muốn bọc Promise vào một hàm, để có thể sử dụng Async/await với hàm đó.
 
 {% highlight js %}
 function promises() {
@@ -487,7 +484,7 @@ function logError(...args) {
   console.error(...args)
 }
 
-// This is the mothership of all things asynchronous
+// Dùng promise để biến hàm có thể sử dụng async/await
 function timeout(duration = 0, shouldReject = false) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -500,7 +497,7 @@ function timeout(duration = 0, shouldReject = false) {
   })
 }
 
-// in React:
+// Trong React:
 function GetGreetingForSubject({subject}) {
   const [isLoading, setIsLoading] = React.useState(false)
   const [error, setError] = React.useState(null)
