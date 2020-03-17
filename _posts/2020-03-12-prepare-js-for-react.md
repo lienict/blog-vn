@@ -301,7 +301,7 @@ import React, {Suspense, Fragment} from 'react'
 
 Trong React, để làm với render có điều kiện, bạn có thể sử dụng nhiều cách như dùng if/else, switch hoặc là toán tử &&..
 
-Vefef phía cá nhân thì tôi yêu thích ternaries nhất. Sử dụng Ternaries làm code JSX trở nên trong sáng hơn.
+Về phía cá nhân thì tôi yêu thích ternaries nhất. Sử dụng Ternaries làm code JSX trở nên trong sáng hơn.
 
 {% highlight js %}
 const message = bottle.fullOfSoda
