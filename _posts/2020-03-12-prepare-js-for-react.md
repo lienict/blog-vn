@@ -129,13 +129,13 @@ function makeCalculation({x, y: d, z = 4}) {
   return Math.floor((x + d + z) / 3)
 }
 
-// this is the same as
+// tương tự với cách việt này
 function makeCalculation(obj) {
   const {x, y: d, z = 4} = obj
   return Math.floor((x + d + z) / 3)
 }
 
-// which is the same as
+// cũng tương tự với cách viết này
 function makeCalculation(obj) {
   const x = obj.x
   const d = obj.y
