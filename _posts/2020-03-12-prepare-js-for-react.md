@@ -47,7 +47,7 @@ console.log(`aaa ${true ? "true ne" : "false ne"}`) // nó sẽ in ra là 'aaa t
 ## Shorthand property names
 
 ES6 đã giới thiệu 2 tính năng mới giúp thao tác mới object trở nên ngắn gọn hơn là Shorthand Properties và Shorthand Method Names.
-Với Shorthande Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo.
+Với Shorthand Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo.
 
 Bạn có thể định nghĩa 1 object trong ES6/ES2015 syntax như sau
 {% highlight js %}
