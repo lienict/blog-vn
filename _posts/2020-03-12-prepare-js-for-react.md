@@ -48,6 +48,7 @@ console.log(`aaa ${true ? "true ne" : "false ne"}`) // nó sẽ in ra là 'aaa t
 
 ES6 đã giới thiệu 2 tính năng mới giúp thao tác mới object trở nên ngắn gọn hơn là Shorthand Properties và Shorthand Method Names.
 Với Shorthand Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo.
+Với Shorthand Method Names, ta cũng có thể khai báo ngắn gọn 1 hàm khi hàm đó là property của 1 object.
 
 Bạn có thể định nghĩa 1 object trong ES6/ES2015 syntax như sau
 {% highlight js %}
@@ -55,11 +56,21 @@ const cat = 'Miaow'
 const dog = 'Woof'
 const bird = 'Peet Peet'
 const someObject = {
-  cat,dog,bird
+  cat,
+  dog,
+  bird,
+  save(){ // shorthand method name
+  }
 }
 
 // kết quả nó sẽ giống với cách viết sau (cách viết theo chuẩn ES5 hoặc cũ hơn)
-const someObject = {cat: cat, dog: dog, bird: bird}
+const someObject = {
+  cat: cat, 
+  dog: dog, 
+  bird: bird,
+  save : function(){
+  }
+}
 
 // Trong React, ta có thể dụng ở nhiều chỗ khác nhau,ví dụ như đoạn custom hook này
 function Counter({initialCount, step}) {
@@ -72,11 +83,7 @@ function Counter({initialCount, step}) {
 
 ## Arrow functions
 
-Arrow functions are another way to write functions in JavaScript, but they do
-have a few semantic differences. Luckily for us in React land, we don't have to
-worry about `this` as much if we're using hooks in our project (rather than
-classes), but the arrow function allows for terser anonymous functions and
-implicit returns, so you'll see and want to use arrow functions plenty.
+Arrow functions cũng được gọi là "fat arrow" function - là một tính năng giúp chúng ta có thể khai báo function ngắn
 
 {% highlight js %}
 const getFive = () => 5
