@@ -47,17 +47,21 @@ console.log(`aaa ${true ? "true ne" : "false ne"}`) // nó sẽ in ra là 'aaa t
 ## Shorthand property names
 
 ES6 đã giới thiệu 2 tính năng mới giúp thao tác mới object trở nên ngắn gọn hơn là Shorthand Properties và Shorthand Method Names.
-Với Shorthande Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo như sau
+Với Shorthande Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo.
+
+Bạn có thể định nghĩa 1 object trong ES6/ES2015 syntax như sau
 {% highlight js %}
-const a = 'hello'
-const b = 42
-const c = {d: [true, false]}
-console.log({a, b, c})
+const cat = 'Miaow'
+const dog = 'Woof'
+const bird = 'Peet Peet'
+const someObject = {
+  cat,dog,bird
+}
 
-// this is the same as:
-console.log({a: a, b: b, c: c})
+// kết quả nó sẽ giống với cách viết sau (cách viết theo chuẩn ES5 hoặc cũ hơn)
+const someObject = {cat: cat, dog: dog, bird: bird}
 
-// in React:
+// Trong React, ta có thể dụng ở nhiều chỗ khác nhau,ví dụ như đoạn custom hook này
 function Counter({initialCount, step}) {
   const [count, setCount] = useCounter({initialCount, step})
   return <button onClick={setCount}>{count}</button>
