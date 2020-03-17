@@ -299,7 +299,9 @@ import React, {Suspense, Fragment} from 'react'
 
 ## Ternaries
 
-I love ternaries. They're beautifully declarative. Especially in JSX.
+Trong React, để làm với render có điều kiện, bạn có thể sử dụng nhiều cách như dùng if/else, switch hoặc là toán tử &&..
+
+Vefef phía cá nhân thì tôi yêu thích ternaries nhất. Sử dụng Ternaries làm code JSX trở nên trong sáng hơn.
 
 {% highlight js %}
 const message = bottle.fullOfSoda
@@ -333,12 +335,6 @@ function TeddyBearList({teddyBears}) {
   )
 }
 {% endhighlight %}
-
-> I realize that ternaries can get a knee-jerk reaction of disgust from some
-> people who had to endure trying to make sense of ternaries before
-> [prettier](https://prettier.io) came along and cleaned up our code. If you're
-> not using prettier already, I strongly advise that you do. Prettier will make
-> your ternaries much easier to read.
 
 [MDN: Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
