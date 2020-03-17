@@ -46,8 +46,8 @@ console.log(`aaa ${true ? "true ne" : "false ne"}`) // nó sẽ in ra là 'aaa t
 
 ## Shorthand property names
 
-ES6 đã giới thiệu 2 tính năng mới giúp thao tác mới object trở nên ngắn gọn hơn là Shorthand Properties và Shorthand Method Names.
-Với Shorthand Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng shorthand để đơn giản hóa việc khai báo.
+ES6 đã giới thiệu 2 tính năng mới giúp thao tác với object trở nên ngắn gọn hơn là Shorthand Properties và Shorthand Method Names.
+Với Shorthand Properties, khi mà bạn muốn định nghĩa một object mà key của object lại trùng tên với tên biến tham chiếu tới property tương ứng được truyền vào, bạn có thể sử dụng Shorthand Properties để đơn giản hóa việc khai báo.
 Với Shorthand Method Names, ta cũng có thể khai báo ngắn gọn 1 hàm khi hàm đó là property của 1 object.
 
 Bạn có thể định nghĩa 1 object trong ES6/ES2015 syntax như sau
@@ -143,7 +143,7 @@ function makeCalculation(obj) {
   return Math.floor((x + d + z) / 3)
 }
 
-// in React:
+// Trong React:
 function UserGitHubImg({username = 'ghost', ...props}) {
   return <img src={`https://github.com/${username}.png`} {...props} />
 }
@@ -151,38 +151,9 @@ function UserGitHubImg({username = 'ghost', ...props}) {
 
 [MDN: Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-> Definitely read that MDN article. You are certain to learn something new. When
-> you're done, try to refactor this to use a single line of destructuring:
-
-{% highlight js %}
-function nestedArrayAndObject() {
-  // refactor this to a single line of destructuring...
-  const info = {
-    title: 'Once Upon a Time',
-    protagonist: {
-      name: 'Emma Swan',
-      enemies: [
-        {name: 'Regina Mills', title: 'Evil Queen'},
-        {name: 'Cora Mills', title: 'Queen of Hearts'},
-        {name: 'Peter Pan', title: `The boy who wouldn't grow up`},
-        {name: 'Zelena', title: 'The Wicked Witch'},
-      ],
-    },
-  }
-  // const {} = info // <-- replace the next few `const` lines with this
-  const title = info.title
-  const protagonistName = info.protagonist.name
-  const enemy = info.protagonist.enemies[3]
-  const enemyTitle = enemy.title
-  const enemyName = enemy.name
-  return `${enemyName} (${enemyTitle}) is an enemy to ${protagonistName} in "${title}"`
-}
-{% endhighlight %}
-
 ## Parameter defaults
 
-This is another feature I use all the time. It's a really powerful way to
-declaratively express default values for your functions.
+Đây cũng là tính năng mà tôi luôn sử dụng. Nó là một cách rất đơn giản nhưng rất hữu dụng khi bạn muốn định nghĩa những giá trị mặc định cho function của bạn
 
 {% highlight js %}
 // add(1)
@@ -191,16 +162,16 @@ function add(a, b = 0) {
   return a + b
 }
 
-// is the same as
+// Tương tự với cách viết sử dụng arrow function này
 const add = (a, b = 0) => a + b
 
-// is the same as
+// Cũng tương tự với cách viết cổ điển này
 function add(a, b) {
   b = b === undefined ? 0 : b
   return a + b
 }
 
-// in React:
+// Trong React:
 function useLocalStorageState({
   key,
   initialValue,
@@ -224,10 +195,7 @@ function useLocalStorageState({
 
 ## Rest/Spread
 
-The `...` syntax can be thought of as kind of a "collection" syntax where it
-operates on a collection of values. I use it all the time and strongly recommend
-you learn how and where it can be used as well. It actually takes different
-meanings in different contexts, so learning the nuances there will help you.
+Toán tử `...` là một tính năng rất cool của ES6. chúng ta có thể sử dụng nó với 2 cách khác nhau đó là `Spread Operator` hoặc là `Rest parameter`
 
 {% highlight js %}
 const arr = [5, 6, 8, 4, 9]
