@@ -195,7 +195,10 @@ function useLocalStorageState({
 
 ## Rest/Spread
 
-Toán tử `...` là một tính năng rất cool của ES6. chúng ta có thể sử dụng nó với 2 cách khác nhau đó là `Spread Operator` hoặc là `Rest parameter`
+Toán tử `...` là một tính năng cực kỳ cool xì lầu của ES6. Chúng ta có thể sử dụng nó với 2 cách khác nhau đó là `Spread Operator` hoặc là `Rest parameter`
+
+`Rest parameter` : Tức là nó sẽ trả ra mọi thứ còn lại vào trong một mảng hoặc object (ghi nhớ là còn lại nhé)
+`Spread Operator` : Tính năng này cho phép bạn chuyển đổi một chuỗi/array/object thành nhiều argument (trong trường hợp gọi với hàm) hoặc là nhiều phần tử (cho array/object). Nói cách khác, nó cho phép chúng ta mở rộng một đối tượng. Với Rest Parameters chúng ta có thể lấy ra list của các tham số cho vào một mảng. Spread Operator cho phép chúng ta chia nhỏ đối tượng trong một mảng vào một biến nào đó.
 
 {% highlight js %}
 const arr = [5, 6, 8, 4, 9]
