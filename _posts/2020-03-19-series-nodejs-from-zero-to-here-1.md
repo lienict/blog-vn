@@ -47,7 +47,7 @@ Việc cài đặt Node.js cũng rất đơn giản thôi. Vì là cross-platfor
 Bạn vào trang web này (https://nodejs.org/en/download/) và click vào **Window Installer** để download version mới nhất của NodeJS.
 Trong Node.js installer thì đã bao gồm NPM package manager.
 
-![Macbook]({{site.baseurl}}/assets/img/nodeinstall.png)
+![Macbook](https://phoenixnap.com/kb/wp-content/uploads/2019/06/donwload-nodejs-installer-windows-1.png)
 
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
