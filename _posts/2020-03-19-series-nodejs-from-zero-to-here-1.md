@@ -19,7 +19,7 @@ Trong bài này các bạn sẽ hiểu được Node.js là gì, cách để ins
 ## Node.js là gì nhỉ?
 Túm lại thì có mấy khái niệm thế này nhé
   * Node.js là một open-source framework, miễn phí hoàn toàn
-  * Node.js là một cross-platform runtime enviroment (có thể chạy trển các môi trường khác nhau như Window, Linux, Mac OS..) dùng cho phát triển server-side
+  * Node.js là một cross-platform runtime enviroment (có thể chạy trên các môi trường khác nhau như Window, Linux, Mac OS..) dùng cho phát triển server-side
   * Node.js là một Javascript runtime xây dựng trên [Chrome's V8 Javascript engine](https://en.wikipedia.org/wiki/V8_%28JavaScript_engine%29)
   * Node.js thực thi mã theo mô hình event-driven, non-blocking I/O, điều đó làm Node.js trở nên nhẹ và hiệu quả
   * Node.js sử dụng [libuv](https://github.com/libuv/libuv), là một thư viện hỗ trợ multi-platform trọng tâm hướng vào xử lý bất đồng bộ I/O.
@@ -67,6 +67,23 @@ Mở command prompt hoặc PowerShell của các bạn và gõ **node* :
 $ node
 >
 {% endhighlight %}
+
+Okay, giờ chúng ta in ra dùng chữ "Hello World"
+{% highlight js %}
+$ node
+> console.log('Hello World')
+{% endhighlight %}
+
+Ấn **Enter**, kết quả in ra sẽ như sau
+{% highlight js %}
+$ node
+> console.log('Hello World')
+Hello World
+undefined
+{% endhighlight %}
+
+Dành cho bạn nào thắc mắc về console.log. **Console.log** là một chức năng để viết các message ra console. Bạn nào code Front-end thì rất quen thuộc rồi, nó sẽ in thông tin mà bạn cần ra DevTools, rất hữu ích cho debug hoặc là in ra thông tin cần thiết. Tuy vậy dùng console.log trong Node.js không phải điều tốt cho performance, thậm chí bạn không nền dùng nó trong ứng dụng thực tế (mình sẽ giải thích trong các bài sau).
+
 
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
