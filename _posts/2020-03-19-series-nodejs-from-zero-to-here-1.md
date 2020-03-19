@@ -3,7 +3,7 @@ layout: post
 title: NodeJS from zero to hero #1
 date: 2020-03-19 13:32:20 +0300
 description: 
-img: unnamed.jpg.jpg # Add image post (optional)
+img: unnamed.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [NodeJS, Javascript]
 ---
