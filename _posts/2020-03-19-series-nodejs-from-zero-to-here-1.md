@@ -17,5 +17,13 @@ Bài viết đầu tiên này ở mức độ cực kỳ basic, cực kỳ zero,
 Trong bài này các bạn sẽ hiểu được Node.js là gì, cách để install (cài đặt) nó và làm thế nào để bắt đầu với nó. Let's go!
 
 ## Node.js là gì nhỉ?
-Túm lại thì thế này nhé
-  * Node.js là một open-source framework
+Túm lại thì có mấy khái niệm thế này nhé
+  * Node.js là một open-source framework, miễn phí hoàn toàn
+  * Node.js là một cross-platform runtime enviroment (có thể chạy trển các môi trường khác nhau như Window, Linux, Mac OS..) dùng cho phát triển server-side
+  * Node.js là một Javascript runtime xây dựng trên [Chrome's V8 Javascript engine](https://en.wikipedia.org/wiki/V8_%28JavaScript_engine%29)
+  * Node.js thực thi mã theo mô hình event-driven, non-blocking I/O, điều đó làm Node.js trở nên nhẹ và hiệu quả
+  * Node.js sử dụng [libuv](https://github.com/libuv/libuv), là một thư viện hỗ trợ multi-platform trọng tâm hướng vào xử lý bất đồng bộ I/O.
+
+Node.js thực sự mạnh ở các ứng dụng cần tốc độ nhanh và cần tới khả năng mở rộng vì Node.js có khả năng xử lý một lượng rất lớn các request với tốc độ nhanh. Mình tin rằng Node.js là một trong những sự lựa chọn tốt nhất cho các ứng dụng real-time như là game online, chat rooms, hoặc là những ứng dụng nào đó mà một user (robot hoặc sensor..) có thể làm gì đó (xem thông tin tức thì, tương tác...) với những user khác mà không cần reload lại trang, hoặc các ứng dụng về Internet of Things, Single-Page Applications, Stream Apps, ứng dụng cần kiến trúc Microservices.
+
+Node.js không phải là toàn năng để đánh đổ tất cả các nền tảng để viết back-end trước đó. Node.js chỉ phù hợp trong một số hoàn cảnh nhất định mà nó thích hợp. Bạn vẫn có thể dùng .NET, Laravel, Rails, Java hay Django... như thường. Mình chỉ nhấn mạnh là Node.js chỉ phù hợp trong hoàn cảnh là project của bạn cần dùng tới nó thôi. Có ý kiến cho rằng, Node.js không phù hợp với các ứng dụng mà cần thực thi tính toán nhiều và nặng trên server như là việc xử lý ảnh hay là thao tác gì đó với BigData. Khi đó chúng ta cần đến những ngôn ngữ thích hợp khác như là CPP hay Java.
