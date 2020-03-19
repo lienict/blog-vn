@@ -37,7 +37,11 @@ Tuy Node.js là đơn luồng, nhưng chúng ta vẫn có thể chạy mọi th�
   * Việc Scale với Node.js rất linh hoạt, nên nó có thể giúp bạn tiết kiệm được tiền vào việc chi tiêu cho cơ sở hạ tầng.
   * Vì là open-source (mã nguồn mở) nên là có sẵn rất nhiều các công cụ hỗ trợ, các module phù hợp. Bạn chỉ cần kéo chúng về và dùng ngay lập tức bằng cách dùng npm.
   
+## Install Node.js
 
+Tại thời điểm viết bài này thì version hiện tại của Node.js là 12.16.1. Bạn nào đang dùng Node 8 thì update nhé vì từ năm 2020 Node 8 sẽ không được update nữa.
+
+Việc cài đặt Node.js cũng rất đơn giản thôi. Vì là cross-platform (đa nền tảng) nên bạn có thể cài đặt nó ở các môi trường khác nhau như Window, Linux, Centos, MacOS... Trong phạm vi bài này, mình sẽ chỉ hướng dẫn các bạn cài đặt trên môi trường window. Các bạn có thể tham khảo nhiều hơn ở trang chủ của Node.js nhé ([link](https://nodejs.org/en/download/))
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
