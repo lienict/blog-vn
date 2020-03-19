@@ -60,6 +60,9 @@ Sau khi cài đặt thành công, bạn mở command prompt hoặc PowerShell ra
 À đó, quên mất không nói về npm. **NPM** là viết tắt của Node package manager là công cụ tạo và quản lý các thư viện lập trình của Javascript nói chung và Node.js nói riêng. Các bạn cứ hình dung có cả nghìn thư viện được tạo ra, bạn thấy chúng phù hợp và muốn kéo về project của mình, thì npm sẽ giúp bạn kéo nó về bằng 1-2 câu command đơn giản. Trang chủ của nó đây nhé (https://www.npmjs.com/).
 Bạn dùng các framework hay thư viện khác trong hệ sinh thái của Javascript (Reactjs, Vuejs..) thì cũng dùng npm nhé hoặc là [yarn](https://yarnpkg.com/)
 
+## Hello World
+Để bắt đầu, chúng ta hãy thử một ví dụ đơn giản nhất nhé. Đó là in ra dòng chữ "Hello World" trên console.
+
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
