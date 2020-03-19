@@ -41,7 +41,7 @@ Tuy Node.js là đơn luồng, nhưng chúng ta vẫn có thể chạy mọi th�
 
 Tại thời điểm viết bài này thì version hiện tại của Node.js là 12.16.1. Bạn nào đang dùng Node 8 thì update nhé vì từ năm 2020 Node 8 sẽ không được update nữa.
 
-Việc cài đặt Node.js cũng rất đơn giản thôi. Vì là cross-platform (đa nền tảng) nên bạn có thể cài đặt nó ở các môi trường khác nhau như Window, Linux, Centos, MacOS... Trong phạm vi bài này, mình sẽ chỉ hướng dẫn các bạn cài đặt trên môi trường window. Các bạn có thể tham khảo nhiều hơn ở trang chủ của Node.js nhé ([link](https://nodejs.org/en/download/))
+Việc cài đặt Node.js cũng rất đơn giản thôi. Vì là cross-platform (đa nền tảng) nên bạn có thể cài đặt nó ở các môi trường khác nhau như Window, Linux, Centos, MacOS... Trong phạm vi bài này, mình sẽ chỉ hướng dẫn các bạn cài đặt trên môi trường window. Các bạn có thể tham khảo nhiều hơn ở trang chủ của Node.js nhé ([đây nè](https://nodejs.org/en/download/))
 
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
