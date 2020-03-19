@@ -65,6 +65,7 @@ Bạn dùng các framework hay thư viện khác trong hệ sinh thái của Jav
 Mở command prompt hoặc PowerShell của các bạn và gõ **node* : 
 {% highlight js %}
 $ node
+>
 {% endhighlight %}
 
 Tham khảo : 
