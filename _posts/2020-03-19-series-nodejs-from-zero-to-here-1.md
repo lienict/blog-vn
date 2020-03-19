@@ -49,6 +49,17 @@ Trong Node.js installer thì đã bao gồm NPM package manager.
 
 ![Macbook](https://phoenixnap.com/kb/wp-content/uploads/2019/06/donwload-nodejs-installer-windows-1.png)
 
+Sau khi download Node.js Installer về, bạn chỉ việc chạy nó next next để cài đặt.
+
+## Step 2 : Kiểm tra cài đặt
+Sau khi cài đặt thành công, bạn mở command prompt hoặc PowerShell ra, và kiểm tra node version và npm version bằng các câu lệnh sau.
+
+* Dùng câu lệnh node -v để kiểm tra phiên bản Node.js
+* Dùng câu lệnh npm -v để kiểm tra phiên bản npm
+
+À đó, quên mất không nói về npm. **NPM** là viết tắt của Node package manager là công cụ tạo và quản lý các thư viện lập trình của Javascript nói chung và Node.js nói riêng. Các bạn cứ hình dung có cả nghìn thư viện được tạo ra, bạn thấy chúng phù hợp và muốn kéo về project của mình, thì npm sẽ giúp bạn kéo nó về bằng 1-2 câu command đơn giản. Trang chủ của nó đây nhé (https://www.npmjs.com/)
+
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
+ - [How to Install Node.js and NPM on Windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
