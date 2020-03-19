@@ -62,6 +62,10 @@ Bạn dùng các framework hay thư viện khác trong hệ sinh thái của Jav
 
 ## Hello World
 Để bắt đầu, chúng ta hãy thử một ví dụ đơn giản nhất nhé. Đó là in ra dòng chữ "Hello World" trên console.
+Mở command prompt hoặc PowerShell của các bạn và gõ **node* : 
+{% highlight js %}
+$ node
+{% endhighlight %}
 
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
