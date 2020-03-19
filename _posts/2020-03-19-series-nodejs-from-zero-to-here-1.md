@@ -84,7 +84,9 @@ undefined
 
 Dành cho bạn nào thắc mắc về console.log. **Console.log** là một chức năng để viết các message ra console. Bạn nào code Front-end thì rất quen thuộc rồi, nó sẽ in thông tin mà bạn cần ra DevTools, rất hữu ích cho debug hoặc là in ra thông tin cần thiết. Tuy vậy dùng console.log trong Node.js không phải điều tốt cho performance, thậm chí bạn không nền dùng nó trong ứng dụng thực tế (mình sẽ giải thích trong các bài sau).
 
+Mợt quá, nay dừng ở đây nhé, to be continue....
 
+Good luck!
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
