@@ -31,6 +31,13 @@ Node.js không phải là toàn năng để đánh đổ tất cả các nền t
 
 Tuy Node.js là đơn luồng, nhưng chúng ta vẫn có thể chạy mọi thứ song song (trong code bạn có thể dùng Promise.all nhé) bởi vì máy ảo hoặc là hệ điều hành đã run I/O song song cho chúng ta rồi. 
 
+## Tại sao lại phải chọn Node.js
+  * Node.js thì cho phép các lập trình viên từ front-end chuyển sang back-end dễ dàng tiếp cận hơn vì cùng là Javascript với nhau. (Trước mình cũng toàn code .NET, front-end thì code jquery thuần).
+  * Như đã nói thì Node.js là "tool" hoàn hảo cho những ứng dụng server-side có lưu lượng truy cập cao
+  * Việc Scale với Node.js rất linh hoạt, nên nó có thể giúp bạn tiết kiệm được tiền vào việc chi tiêu cho cơ sở hạ tầng.
+  * Vì là open-source (mã nguồn mở) nên là có sẵn rất nhiều các công cụ hỗ trợ, các module phù hợp. Bạn chỉ cần kéo chúng về và dùng ngay lập tức bằng cách dùng npm.
+  
+
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
