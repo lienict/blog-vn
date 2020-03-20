@@ -123,6 +123,12 @@ module.exports.sum = sum
 {% endhighlight %}
 
 Để tính tổng dãy số với Javascript thì có nhiều cách, các bạn có thể dùng **for**, **forEach**. Trong ví dụ này thì mình dùng **reduce**, function **reduce** này rất hữu dụng trong Javascript, sử dụng nó đúng cách sẽ làm code của các bạn ngắn gọn và sáng sủa, ứng dụng của nó trong project thực tế cũng rất rộng rãi mình khuyên các bạn nên thành thạo nó.
+Tiếp đó là chúng ta dùng module.exports để export hàm này cho các chỗ khác dùng. Ngoài cách dùng export như trên, các bạn có thể dụng như sau, nó cũng tương tự để export.
+
+{% highlight js %}
+module.exports = {sum}
+{% endhighlight %}
+
 
 Good luck!
 
