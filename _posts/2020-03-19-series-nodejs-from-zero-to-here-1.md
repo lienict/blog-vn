@@ -107,7 +107,21 @@ Trong đó :
 Đầu tiên, các bạn vào trong thư mục project trong máy, bật Command Prompt hoặc PowerShell ở tại thư mục đó và gõ **npm init**.
 Bước này sẽ tạo ra file package.json. Chúng ta sẽ khai báo các thông tin cần thiết vào file package.json này. Ví dụ như dưới hình nhé
 
-![Macbook]({{site.baseurl}}/assets/img/hello.PNG)
+{% highlight js %}
+{
+  "name": "helloword",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+{% endhighlight %}
 
 Sau khi tạo xong file package.json, các bạn tạo các thư mục và file tương ứng như hình mô tả cấu trúc thư mục ở phía trên và bắt đầu code.
 
@@ -122,13 +136,45 @@ function sum(arr) {
 module.exports.sum = sum
 {% endhighlight %}
 
-Để tính tổng dãy số với Javascript thì có nhiều cách, các bạn có thể dùng **for**, **forEach** (về tốc độ thì for vẫn là best!). Trong ví dụ này thì mình dùng **reduce**, function **reduce** này rất hữu dụng trong Javascript, sử dụng nó đúng cách sẽ làm code của các bạn ngắn gọn và sáng sủa, ứng dụng của nó trong project thực tế cũng rất rộng rãi mình khuyên các bạn nên thành thạo nó.
+Để tính tổng dãy số với Javascript thì có nhiều cách, các bạn có thể dùng **for**, **forEach** (về tốc độ thì for vẫn là best!). Trong ví dụ này thì mình dùng **reduce**, function **reduce** này rất hữu dụng trong Javascript, sử dụng nó đúng cách sẽ làm code của các bạn ngắn gọn và sáng sủa, ứng dụng của nó trong project thực tế cũng rất rộng rãi mình khuyên các bạn nên thành thạo nó. Bài này mình sẽ chỉ sử dụng mà không nói cách sử dụng nó như thế nào.
+
 Tiếp đó là chúng ta dùng module.exports để export hàm này cho các chỗ khác dùng. Ngoài cách dùng export như trên, các bạn có thể dụng như sau, nó cũng tương tự để export.
 
 {% highlight js %}
 module.exports = {sum}
 {% endhighlight %}
 
+Ok, vậy là xong module tính tổng. Ở bên file app/index.js thì code như sau nhé.
+
+{% highlight js %}
+const calc = require('./calc')
+const numbersToAdd = [1, 2, 3, 4, 5];
+
+const result = calc.sum(numbersToAdd)
+
+console.log(`the result is : ${result}`)
+{% endhighlight %}
+
+File này thì chúng ta tính tổng của dãy *numbersToAdd* và in nó ra bằng lệnh console.log. Các bạn để ý dòng đầu tiên *const calc = require('./calc')* nó là cách chúng ta import module **sum** từ file calc.js mà ta vừa khai báo. Và sử dụng hàm đó bằng câu lệnh *calc.sum* ở phía dưới nha.
+
+Ở file index.js của project, chúng ta import module index như thế này, trong ví dụ này thì chúng ta chỉ khai báo file này đơn giản vậy thôi, thực tế thì sẽ có cả khối thứ cần làm ở đây. 
+
+{% highlight js %}
+require('./app/index')
+{% endhighlight %}
+
+Ok, giờ chỉ cần chạy nó. Các bạn bật Command Prompt hoặc PowerShell lên, gõ *npm start* hoặc *node index.js* và xem kết quả in ra nhé.
+Nếu nó in ra dòng chữ *the result is : 15* như phía dưới thì các bạn đã thành công rồi. 
+À quên, để gõ được *npm start* thì các bạn phải thêm dòng khai báo *"start" : "node index.js"* này vào package.json nhé. Xem lại code package.json ở phía trên nha.
+
+{% highlight js %}
+D:\node\start> npm start
+> helloword@1.0.0 start D:\node\start
+> node index.js
+the result is : 15
+{% endhighlight %}
+
+Bài này mình dừng lại ở đây nhé, cảm ơn các bạn đã đọc hết :)
 
 Good luck!
 
