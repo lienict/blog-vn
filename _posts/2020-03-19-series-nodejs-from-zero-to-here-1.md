@@ -93,9 +93,19 @@ Các bạn cần chuẩn bị những kiến thức sau:
   * Biết sử dụng một số hàm với array trong Javascript như reduce/map/find/filter (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!).
   
 Chúng ta sẽ tạo một project với cấu trúc thư mục như thế này:
-![Macbook](https://phoenixnap.com/kb/wp-content/uploads/2019/06/donwload-nodejs-installer-windows-1.png)
 ![Macbook]({{site.baseurl}}/assets/img/app.PNG)
 
+Trong đó :
+  * file package.json : mọi Project Node.js đều bắt đầu từ việc tạo file package.json này, chúng ta sẽ dùng lệnh 
+**npm init** để tạo nó ngay sau đây. File này có thể hiểu là file json lưu lại tất cả thông tin của Project (như tên ứng dụng, version, mô tả, câu lệnh chạy..) và những module mà project cần để chạy
+  * file index.js : Đây là file chạy đầu tiên khi khởi chạy project. File này thường sẽ load các module cần thiết và những setup của Project.
+  * Thư mục app : Đây là thư mục chứa code ví dụ của chúng ta, nó bao gồm 2 file là calc.js và index.js. 
+    * File calc.js là file thực hiện hàm tính tổng và export ra module tính tổng là hàm sum. 
+    * File index.js là file import hàm sum để tính tổng của một dãy số.
+
+Đầu tiên, các bạn vào trong thư mục project trong máy, bật Command Prompt hoặc PowerShell ở tại thư mục đó và gõ **npm init**.
+Bước này sẽ tạo ra file package.json. Chúng ta sẽ khai báo các thông tin cần thiết vào file package.json này. Ví dụ như dưới hình nhé
+![Macbook]({{site.baseurl}}/assets/img/hello.PNG)
 Good luck!
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
