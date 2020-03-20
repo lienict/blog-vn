@@ -84,7 +84,12 @@ undefined
 
 Dành cho bạn nào thắc mắc về console.log. **Console.log** là một chức năng để viết các message ra console. Bạn nào code Front-end thì rất quen thuộc rồi, nó sẽ in thông tin mà bạn cần ra DevTools, rất hữu ích cho debug hoặc là in ra thông tin cần thiết. Tuy vậy dùng console.log trong Node.js không phải điều tốt cho performance, thậm chí bạn không nền dùng nó trong ứng dụng thực tế (mình sẽ giải thích trong các bài sau).
 
-Mợt quá, nay dừng ở đây nhé, to be continue....
+## Ví dụ thực tế với Modularization (module hóa)
+Ok cùng nhảy vào ví dụ thực tế nhé, trong ví dụ này chúng ta sẽ tính tổng 1 dãy số và in nó ra console. 
+Chuẩn bị
+  * Các bạn cần một IDE cho riêng mình để code. Có thể đó là Visual Studio Code (VSC), Sublime, Webstorm, Atom... Mình đang dùng VSC
+  * Nữa là cần trang bị kiến thức cơ bản về ES6 như var/let/const và module.
+  * Biết sử dụng một số hàm với array trong Javascript như reduce/map/find/filter (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!)
 
 Good luck!
 Tham khảo : 
