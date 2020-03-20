@@ -93,6 +93,7 @@ Các bạn cần chuẩn bị những kiến thức sau:
   * Biết sử dụng một số hàm với array trong Javascript như reduce/map/find/filter (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!).
   
 Chúng ta sẽ tạo một project với cấu trúc thư mục như thế này:
+
 ![Macbook]({{site.baseurl}}/assets/img/app.PNG)
 
 Trong đó :
@@ -105,6 +106,7 @@ Trong đó :
 
 Đầu tiên, các bạn vào trong thư mục project trong máy, bật Command Prompt hoặc PowerShell ở tại thư mục đó và gõ **npm init**.
 Bước này sẽ tạo ra file package.json. Chúng ta sẽ khai báo các thông tin cần thiết vào file package.json này. Ví dụ như dưới hình nhé
+
 ![Macbook]({{site.baseurl}}/assets/img/hello.PNG)
 Good luck!
 Tham khảo : 
