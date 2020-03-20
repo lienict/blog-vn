@@ -93,8 +93,8 @@ Các bạn cần chuẩn bị những kiến thức sau:
   * Biết sử dụng một số hàm với array trong Javascript như reduce/map/find/filter (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!).
   
 Chúng ta sẽ tạo một project với cấu trúc thư mục như thế này:
-
-      ![App]({{site.baseurl}}/assets/img/app.PNG)
+![Macbook](https://phoenixnap.com/kb/wp-content/uploads/2019/06/donwload-nodejs-installer-windows-1.png)
+![Macbook]({{site.baseurl}}/assets/img/app.PNG)
 
 Good luck!
 Tham khảo : 
