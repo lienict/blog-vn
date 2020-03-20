@@ -108,7 +108,22 @@ Trong đó :
 Bước này sẽ tạo ra file package.json. Chúng ta sẽ khai báo các thông tin cần thiết vào file package.json này. Ví dụ như dưới hình nhé
 
 ![Macbook]({{site.baseurl}}/assets/img/hello.PNG)
+
+Sau khi tạo xong file package.json, các bạn tạo các thư mục và file tương ứng như hình mô tả cấu trúc thư mục ở phía trên và bắt đầu code.
+
+Đầu tiên là file app/calc.js
+{% highlight js %}
+function sum(arr) {
+    return arr.reduce((x, y) => {
+        return x + y;
+    }, 0)
+}
+
+module.exports.sum = sum
+{% endhighlight %}
+
 Good luck!
+
 Tham khảo : 
  - [Getting Started With Node.js Tutorial](https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/)
  - [Node.js multithreading: What are Worker threads, and why do they matter?](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)
