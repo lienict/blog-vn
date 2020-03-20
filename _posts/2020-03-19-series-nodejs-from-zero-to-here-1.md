@@ -94,7 +94,7 @@ Các bạn cần chuẩn bị những kiến thức sau:
   
 Chúng ta sẽ tạo một project với cấu trúc thư mục như thế này:
 
-      ({{site.baseurl}}/assets/img/app.PNG)
+      ![App]({{site.baseurl}}/assets/img/app.PNG)
 
 Good luck!
 Tham khảo : 
