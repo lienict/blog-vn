@@ -176,6 +176,8 @@ the result is : 15
 
 Bài này mình dừng lại ở đây nhé, cảm ơn các bạn đã đọc hết :)
 
+Link code của bài này ở đây nha : [github](https://github.com/lienict/NodeJSFirst)
+
 Good luck!
 
 Tham khảo : 
