@@ -91,6 +91,10 @@ Các bạn cần chuẩn bị những kiến thức sau:
   * Các bạn cần một IDE cho riêng mình để code. Có thể đó là Visual Studio Code (VSC), Sublime, Webstorm, Atom... Mình đang dùng VSC
   * Nữa là cần trang bị kiến thức cơ bản về ES6 như var/let/const, ESModules,Arrow function và Template Literals (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!).
   * Biết sử dụng một số hàm với array trong Javascript như reduce/map/find/filter (Tham khảo ở [đây](https://lienict.github.io/blog-vn/prepare-js-for-react/) nhé!).
+  
+Chúng ta sẽ tạo một project với cấu trúc thư mục như thế này:
+
+      ({{site.baseurl}}/assets/img/app.PNG)
 
 Good luck!
 Tham khảo : 
