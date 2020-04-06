@@ -57,3 +57,5 @@ Và bên trong component, mình có đặt dòng console.log để in ra rằng 
 Giờ click vào button thứ ba - button **a++, b++**, các bạn sẽ thấy rằng Component vẫn render một lần như những gì chúng ta mong muốn. 
 Ok, giờ click vào button cuối cùng - button **a++, b++ after 1s** và bật console lên, các bạn đã thấy sự khác biệt chưa? Các bạn không nhìn nhầm đầu, component đã được render tới *hai lần*  đấy! Câu trả lời cũng đơn giản thôi, React thì gộp hết cả các lần update state ở trong các tác vụ đồng bộ (synchronous) làm một lần. Nói cách khác, trong những hàm bất đồng bộ (asynchronous), mỗi một lần setState thì sẽ được trigger để render lại component một lần. 
 
+Để tránh được những lần render vô bổ thế này, ngoài việc các bạn nên sử dụng setState một cách cẩn thận ra thì có vài rules như sau.
+
