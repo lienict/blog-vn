@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [ReactJS]
 ---
 
-Xin chào các bạn, Series này không hướng cacds bạn đến việc sử dụng React Hooks như thế nào.  
+Xin chào các bạn, Series này không hướng các bạn đến việc sử dụng React Hooks như thế nào.  
 
 Mở đầu cho series này sẽ là đào sâu về việc Re-render khi bạn dùng React-Hook. 
 
