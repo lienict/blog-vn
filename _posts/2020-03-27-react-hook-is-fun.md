@@ -16,4 +16,37 @@ Mở đầu cho series này sẽ là đào sâu về việc Re-render khi bạn 
 Trong thực tế nói chúng, chúng ta cũng biết rằng khi code React thì việc gặp phải các vấn đề về hiệu năng luôn là những vấn đề mà một lập trình viên cần phải chú ý. Còn khi sử dụng React Hook nói riêng, chúng ta cũng cần nên biết những vấn đề về hiệu năng đó là đến từ đâu.
 Một trong những issue nổi cộm nhất khi sử dụng React đó là việc render các component không cần thiết.
 
-Hãy xem ví dụ dưới đây nhé
+Hãy xem ví dụ dưới đây nhé :
+
+{% highlight js %}
+const Incrementor = () => {
+  const [, setA] = useState(0);
+  const [, setB] = useState(0);
+
+  const incrementA = () => setA(a => a + 1);
+  const incrementB = () => setB(a => a + 1);
+
+  const incrementAB = () => {
+    incrementA();
+    incrementB();
+  };
+
+  const incrementABLater = () => {
+    setTimeout(() => {
+      incrementA();
+      incrementB();
+    }, 1000);
+  };
+
+  console.log("Re-rendered");
+
+  return (
+    <div>
+      <button onClick={incrementA}>a++</button>
+      <button onClick={incrementB}>b++</button>
+      <button onClick={incrementAB}>a++, b++</button>
+      <button onClick={incrementABLater}>a++, b++ after 1s</button>
+    </div>
+  );
+};
+{% endhighlight %}
